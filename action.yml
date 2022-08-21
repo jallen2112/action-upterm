@@ -8,6 +8,8 @@ runs:
   steps: 
   - run: echo 'STARTING JALLEN2112 action'
     shell: bash
+  - run: node -v
+    shell: bash
   - run: npm i
     shell: bash
   - run: node start
