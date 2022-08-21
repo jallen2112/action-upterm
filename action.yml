@@ -6,6 +6,9 @@ branding:
 runs:
   using: 'composite'
   steps: 
+  - uses: actions/setup-node@v3
+    with:
+      node-version: 16
   - run: echo 'STARTING JALLEN2112 action'
     shell: bash
   - run: node -v
