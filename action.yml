@@ -4,8 +4,13 @@ author: 'Lari Hotari'
 branding:
   icon: 'terminal'
 runs:
-  using: 'node16'
-  main: 'lib/index.js'
+  using: 'composite'
+  steps: 
+  - run: echo 'STARTING JALLEN2112 action'
+    shell: bash
+  - run: npm i
+    shell: bash
+  - run: node start
 inputs:
   GITHUB_TOKEN:
     description: Github Token
