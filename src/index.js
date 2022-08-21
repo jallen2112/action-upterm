@@ -19,6 +19,8 @@ export async function run() {
       return
     }
 
+    core.info("JALLEN2112")
+
     core.debug("Installing dependencies")
     if (process.platform == "linux") {
       await execShellCommand(`curl -sL https://github.com/owenthereal/upterm/releases/download/${UPTERM_VERSION}/upterm_linux_amd64.tar.gz | tar zxvf - -C /tmp upterm && sudo install /tmp/upterm /usr/local/bin/`)
